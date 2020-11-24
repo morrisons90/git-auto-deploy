@@ -22,10 +22,10 @@ return [
         ],
 
         'db'                                => [
-            'name' => 'my_deploy',
-            'host' => 'localhost',
-            'user' => 'root',
-            'pass' => 'root',
+            'name' => $_SERVER["NAME"],
+            'host' => $_SERVER["HOST"],
+            'user' => $_SERVER["USER"],
+            'pass' => $_SERVER["PASS"],
         ],
         'binpaths'                          => [
             'git_path'      => '/usr/bin/git',
